@@ -1,23 +1,32 @@
 
-# Escalonador CPU
+# Substituição de Página
 
-Um escalonador de cpu usando os seguintes algoritmos:
-- FCFS: First-Come, First-Served
-- SJF: Shortest Job First
-- RR: Round Robin (com quantum = 2)
+Um programa simples de substituição de página usando os seguintes algoritmos:
+- FIFO: First In, First Out
+- OTM: Algoritmo Otimo
+- LRU: Least Recently Used
 
-O escalonador calcula e retorna o tempo médio de retorno, de resposta e espera, nesta ordem.
+O programa calcula e retorna quantas faltas de página cada um dos algoritmos acima gerou.
 
 
 ## Como usar
 
-Basta colocar no arquivo entrada.txt os valores do tempo de chegada e duração de cada processo como par, separado por um espaço em branco.
+Basta colocar no arquivo entrada.txt o primeiro valor como a quantidade de quadros de memória
+disponíveis na RAM e o restante dos valores representando a
+sequência de referências às páginas. Apenas um valor por linha.
 
 ```bash
-  0 10
-  4 4
-  8 6
-  21 8
+3
+1
+2
+3
+4
+2
+1
+5
+1
+2
+3
 ```
     
 ## Autores
