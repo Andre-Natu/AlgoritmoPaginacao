@@ -24,10 +24,6 @@ def ler_entrada():
 if __name__ == '__main__':
     quadros_memoria, sequencia_referencia = ler_entrada()
 
-    print(quadros_memoria)
-
-    print(sequencia_referencia)
-
     faltas_fifo = fifo.calcular_fifo(quadros_memoria, sequencia_referencia)
     print("FIFO ", faltas_fifo)
 
